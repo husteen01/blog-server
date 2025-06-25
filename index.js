@@ -16,8 +16,12 @@ app.use("/api/v1", authRouter)
 //     res.send("passed authentication")
 
 // })
-app.use("/api/v1/blogs", auth, blogRouter) //auth middleware is used to protect the blog route from being accessed by unauthorized users
-// app.use(notfound) //notfound middleware is used to handle 404 errors when the route does not exist
+// app.use("/api/v1/blog", auth, blogRouter) //auth middleware is used to protect the blog route from being accessed by unauthorized users
+// app.get ("/", (req, res)=>{
+//     res.status(200).json({success: true, message: "server is live"})
+// });
+// app.use(notfound) //notfound middleware is used to handle 404 errors when the route
+
 
 
 const start = async () => {
